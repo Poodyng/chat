@@ -1,0 +1,40 @@
+@import './reset';
+@import './mixins';
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.btn--chat {
+    padding: 11px 18px;
+    border-radius: 12px;
+    background: #00A3FF;
+    color: #fff;
+    font-size: 25px;
+    transition: 0.3s ease;
+    &:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: #00A3FF;
+        outline: 1px solid #00A3FF;
+    }
+}
+
+.btn--chatt {
+    display: flex;
+    flex-direction: row-reverse;
+    .chat__right-box-text {
+        flex-direction: row-reverse;
+    }
+    .chat__right-sub-text {
+        color: #FFF;
+        border-radius: 14px 0px 14px 14px;
+        border: 1px solid #00A3FF;
+        background: #00A3FF;
+    }
+}
